@@ -1,0 +1,120 @@
+<!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="build">Our Projects</h1>
+    </div>
+  </section>
+
+  <section class="projects-section">
+    <div class="projects-header">
+      <div>
+        <span class="section-tag">Portfolio</span>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <div class="projects-controls">
+        <div class="project-filters">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-btn" data-filter="residential" aria-pressed="false">Residential</button>
+          <button type="button" class="filter-btn" data-filter="commercial" aria-pressed="false">Commercial</button>
+          <button type="button" class="filter-btn" data-filter="Renovation" aria-pressed="false">Renovation</button>
+          <button type="button" class="filter-btn" data-filter="Turnkey" aria-pressed="false">Turnkey</button>
+        </div>
+
+        <div class="pagination pagination-top"></div>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Card 1 -->
+      <div class="project-card residential" tabindex="0" role="button" aria-label="Open Luxury Residence Residential project gallery">
+        <img src="/images/Trinco Renditions/First/IMG-20251219-WA0001.jpg">
+        <div class="project-overlay">
+          <h3>Luxury Residence</h3>
+          <span>Residential</span>
+        </div>
+
+        <!-- Hidden gallery for lightbox -->
+        <div class="project-gallery">
+          <img src="/images/Trinco Renditions/First/IMG-20251219-WA0001.jpg" data-caption="Front 3D View">
+          <img src="/images/Trinco Renditions/First/IMG-20251219-WA0003.jpg" data-caption="Rear Elevation">
+          <img src="/images/Trinco Renditions/First/IMG-20251219-WA0005.jpg" data-caption="Right Elevation">
+          <img src="/images/Trinco Renditions/First/IMG-20251219-WA0007.jpg" data-caption="Floor Plan">
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="project-card commercial" tabindex="0" role="button" aria-label="Open Office Complex Commercial project gallery">
+        <img src="/images/Trinco Renditions/Second/IMG-20251219-WA0013.jpg">
+        <div class="project-overlay">
+          <h3>Office Complex</h3>
+          <span>Commercial</span>
+        </div>
+
+        <!-- Hidden gallery for lightbox -->
+        <div class="project-gallery">
+          <img src="/images/Trinco Renditions/Second/IMG-20251219-WA0013.jpg" data-caption="Front 3D View">
+          <img src="/images/Trinco Renditions/Second/IMG-20251219-WA0015.jpg" data-caption="Rear Elevation">
+          <img src="/images/Trinco Renditions/Second/IMG-20251219-WA0017.jpg" data-caption="Left Elevation">
+          <img src="/images/Trinco Renditions/Second/IMG-20251219-WA0018.jpg" data-caption="Right Elevation">
+          <img src="/images/Trinco Renditions/Second/IMG-20251219-WA0019.jpg" data-caption="Floor Plan">
+        </div>
+      </div>
+      <!-- Card 1 -->
+      <div class="project-card residential" tabindex="0" role="button" aria-label="Open Luxury Residence Residential project gallery">
+        <img src="/images/Trinco Renditions/Third/IMG-20251219-WA0025.jpg">
+        <div class="project-overlay">
+          <h3>Luxury Residence</h3>
+          <span>Residential</span>
+        </div>
+
+        <!-- Hidden gallery for lightbox -->
+        <div class="project-gallery">
+          <img src="/images/Trinco Renditions/Third/IMG-20251219-WA0025.jpg" data-caption="Front 3D View">
+          <img src="/images/Trinco Renditions/Third/IMG-20251219-WA0027.jpg" data-caption="Rear Elevation">
+          <img src="/images/Trinco Renditions/Third/IMG-20251219-WA0025.jpg" data-caption="Front 3D View">
+          <img src="/images/Trinco Renditions/Third/IMG-20251219-WA0027.jpg" data-caption="Rear Elevation">
+
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="project-card commercial" tabindex="0" role="button" aria-label="Open Office Complex Commercial project gallery">
+        <img src="/images/Trinco Renditions/Fourth/IMG-20251219-WA0033.jpg">
+        <div class="project-overlay">
+          <h3>Office Complex</h3>
+          <span>Commercial</span>
+        </div>
+
+        <!-- Hidden gallery for lightbox -->
+        <div class="project-gallery">
+          <img src="/images/Trinco Renditions/Fourth/IMG-20251219-WA0033.jpg" data-caption="Front 3D View">
+          <img src="/images/Trinco Renditions/Fourth/IMG-20251219-WA0035.jpg" data-caption="Rear Elevation">
+          <img src="/images/Trinco Renditions/Fourth/IMG-20251219-WA0037.jpg" data-caption="Left Elevation">
+          <img src="/images/Trinco Renditions/Fourth/IMG-20251219-WA0037.jpg" data-caption="Left Elevation">
+
+        </div>
+      </div>
+
+
+
+      <!-- Duplicate more cards as needed -->
+    </div>
+
+    <div class="pagination pagination-bottom"></div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="project-lightbox" id="projectLightbox">
+    <button class="lightbox-close" type="button" aria-label="Close lightbox">&times;</button>
+
+    <div class="lightbox-main">
+      <img id="lightboxMain">
+      <p id="lightboxCaption"></p>
+    </div>
+
+    <button class="lightbox-nav prev" type="button" aria-label="Previous image">&#10094;</button>
+    <button class="lightbox-nav next" type="button" aria-label="Next image">&#10095;</button>
+
+    <div class="lightbox-thumbs" id="lightboxThumbs"></div>
+  </div>
