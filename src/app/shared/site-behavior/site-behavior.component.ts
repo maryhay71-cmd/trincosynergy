@@ -111,17 +111,8 @@ export class SiteBehaviorComponent implements AfterViewInit, OnDestroy {
         event.preventDefault();
         open(0);
       };
-      const keyHandler = (event: Event) => {
-        const keyboardEvent = event as KeyboardEvent;
-        if (keyboardEvent.key === 'Enter' || keyboardEvent.key === ' ') {
-          keyboardEvent.preventDefault();
-          handler(event);
-        }
-      };
       card.addEventListener('click', handler);
-      card.addEventListener('keydown', keyHandler);
       this.cleanup.push(() => card.removeEventListener('click', handler));
-      this.cleanup.push(() => card.removeEventListener('keydown', keyHandler));
     });
     const keyHandler = (event: KeyboardEvent) => {
       if (!lightbox.classList.contains('show')) return;
@@ -177,9 +168,7 @@ export class SiteBehaviorComponent implements AfterViewInit, OnDestroy {
     buttons.forEach((button) => {
       const handler = () => {
         buttons.forEach((b) => b.classList.remove('active'));
-        buttons.forEach((b) => b.setAttribute('aria-pressed', 'false'));
         button.classList.add('active');
-        button.setAttribute('aria-pressed', 'true');
         activeFilter = button.dataset['filter'] || 'all';
         currentPage = 1;
         apply();
